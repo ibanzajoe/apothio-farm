@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
 </head>
 <body>
@@ -15,44 +16,46 @@
     </div>
 
     <div class="section-blog">
-      <div class="section-title">
-        <h3 class="section-title-text">
-          How We Built Our Farm
-        </h3>
-      </div>
+      <div class="animation-slider">
+        <div class="section-title">
+          <h3 class="section-title-text">
+            How We Built Our&nbsp;Farm
+          </h3>
+        </div>
 
-      <div class="section-author">
-        <div class="author-container">
-          <div class="author-image">
-            <img src="./author.jpeg" alt="author" />
+        <div class="section-author">
+          <div class="author-container">
+            <div class="author-image">
+              <img src="./author.jpeg" alt="author" />
+            </div>
+            <div class="author-info">
+              <h3 class="author-name">
+                By Joshua Renfro
+              </h3>
+              <h4 class="published-date">
+                Published on Oct. 01, 2019
+              </h4>
+            </div>
           </div>
-          <div class="author-info">
-            <h3 class="author-name">
-              By Joshua Renfro
-            </h3>
-            <h4 class="published-date">
-              Published on Oct. 01, 2019
-            </h4>
+        </div>
+
+        <div class="hero-image">
+          <img src="./tractor.jpeg" alt="hero-image" />
+        </div>
+
+        <div class="section-blog-container">
+          <div class="section-blog-content">
+            Apothio was originally built to be the research hub for the CBD industry. As the network of companies producing CBD grew, we saw the value of allowing different companies to collaborate together. We’re now making shared channels available to all customers! A shared channel is one that connects two separate organizations. You no longer need to go back and forth between external emails and internal Slack channels, or provision an endless number of guests into your Slack workspace: A shared channel creates one productive space for people from both companies to send messages, share files, and work together in Slack.
           </div>
+
+          <br/>
+          <br/>
+
+          <div class="section-blog-content">
+            The idea of shared channels challenged Slack’s fundamental assumption that the workspace is the atomic unit of partitioning customer data, however. For this post, we’ll discuss a few of the most interesting technical challenges from this change. We’ll talk about our initial architecture, the decisions that went into reframing how Slack worked, the implications of those decisions, and how we’re working on scaling for the future.
+          </div>
+
         </div>
-      </div>
-
-      <div class="hero-image">
-        <img src="./tractor.jpeg" alt="hero-image" />
-      </div>
-
-      <div class="section-blog">
-        <div class="section-blog-content">
-          Apothio was originally built to be the research hub for the CBD industry. As the network of companies producing CBD grew, we saw the value of allowing different companies to collaborate together. We’re now making shared channels available to all customers! A shared channel is one that connects two separate organizations. You no longer need to go back and forth between external emails and internal Slack channels, or provision an endless number of guests into your Slack workspace: A shared channel creates one productive space for people from both companies to send messages, share files, and work together in Slack.
-        </div>
-
-        <br/>
-        <br/>
-
-        <div class="section-blog-content">
-          The idea of shared channels challenged Slack’s fundamental assumption that the workspace is the atomic unit of partitioning customer data, however. For this post, we’ll discuss a few of the most interesting technical challenges from this change. We’ll talk about our initial architecture, the decisions that went into reframing how Slack worked, the implications of those decisions, and how we’re working on scaling for the future.
-        </div>
-
       </div>
     </div>
 
@@ -72,30 +75,33 @@
           </div>
 
           <div class="social-media">
-            <svg aria-hidden="true"
-                 focusable="false"
-                 data-prefix="fab"
-                 data-icon="facebook-f"
-                 class="svg-inline--fa fa-facebook-f fa-w-10"
-                 role="img"
-                 xmlns="http://www.w3.org/2000/svg"
-                 stroke="#fff"
-                 viewBox="0 0 320 512">
-              <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
-            </svg>
+            <a href="https://www.facebook.com/groups/1347681862056551" target="_blank">
+              <svg aria-hidden="true"
+                   focusable="false"
+                   data-prefix="fab"
+                   data-icon="facebook-f"
+                   class="svg-inline--fa fa-facebook-f fa-w-10"
+                   role="img"
+                   xmlns="http://www.w3.org/2000/svg"
+                   stroke="#fff"
+                   viewBox="0 0 320 512">
+                <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+              </svg>
+            </a>
 
-            <svg aria-hidden="true"
-                 focusable="false"
-                 data-prefix="fab"
-                 data-icon="instagram"
-                 class="svg-inline--fa fa-instagram fa-w-14"
-                 role="img"
-                 xmlns="http://www.w3.org/2000/svg"
-                 stroke="#fff"
-                 viewBox="0 0 448 512">
-              <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-            </svg>
-
+            <a href="https://www.instagram.com/apothiocbd" target="_blank">
+              <svg aria-hidden="true"
+                   focusable="false"
+                   data-prefix="fab"
+                   data-icon="instagram"
+                   class="svg-inline--fa fa-instagram fa-w-14"
+                   role="img"
+                   xmlns="http://www.w3.org/2000/svg"
+                   stroke="#fff"
+                   viewBox="0 0 448 512">
+                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+            </a>
           </div>
 
           <div class="footer-copyright">
@@ -125,12 +131,17 @@
 
   @font-face {
     font-family: 'Lora-bold', serif;
-    src: url("./Lora-Bold.ttf")
+    src: url("./Lora-Bold.ttf");
   }
 
   @font-face {
     font-family: 'Lora-regular', serif;
-    src: url("./Lora-Regular.ttf")
+    src: url("./Lora-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: 'Montserrat-Light', sans-serif;
+    src: url("./Montserrat-Light.ttf");
   }
 
   h3, h4 {
@@ -156,6 +167,7 @@
 
   .section-blog {
     max-width: 960px;
+    width: 94%;
     margin: 0 auto;
     background-color: #fff;
     margin-bottom: 40px;
@@ -212,7 +224,7 @@
     height: 100%;
   }
 
-  .section-blog {
+  .section-blog-container {
     margin-top: 40px;
   }
 
@@ -223,6 +235,7 @@
     font-family: 'Lora-regular', serif;
     line-height: 35.3px;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   .section-footer {
@@ -244,7 +257,7 @@
   }
 
   .footer-contact {
-    color:#e0efd2;
+    color:#fff;
     font-size: 15px;
     text-align: center;
   }
@@ -253,6 +266,8 @@
     font-family: Montserrat;
     margin-top: 60px;
     margin-bottom: 18px;
+    color: #e0efd2;
+    font-weight: 400;
   }
 
   .footer-questions a {
@@ -274,20 +289,97 @@
     margin-bottom: 14px;
   }
 
-  .social-media svg {
-    width: 28px;
-    height: 28px;
+  .social-media a svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: white;
   }
 
-  svg + svg {
+  .social-media a + a {
     margin-left: 1rem;
   }
 
   .footer-copyright {
-    font-family: Monterrat;
+    font-family: 'Montserrat-Light';
     font-size: 14px;
     color: rgba(255,255,255,.3);
     line-height: 2;
     text-align: center;
   }
+
+  @media screen and (max-width: 742px) {
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .author-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .author-image img {
+      width: 72px;
+    }
+    .author-name {
+      margin-top: 12px;
+      font-size: 22px;
+      text-align: center;
+    }
+    .published-date {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .section-blog {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .section-blog {
+      max-width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .section-blog {
+      max-width: 800px;
+    }
+  }
+
+
+  @keyframes slideInFromBot {
+    0% {
+      transform: translateY(25%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes opacityChange {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animation-slider {
+    animation: 1s ease-out 0s 1 slideInFromBot;
+  }
+
+  .section-footer {
+    animation: 2s ease-out 0s 1 opacityChange;
+  }
+
 </style>
